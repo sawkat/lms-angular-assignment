@@ -1,0 +1,21 @@
+<h2>Library List</h2>
+<div class="col-md-12 centeralign">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of library;let indexOfelement=index;">
+        <th scope="row">{{indexOfelement + 1}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.address}}</td>
+        <td> <a (click)=goToBookList(data.id) class="btn btn-primary">Get Book List</a></td> 
+      </tr>
+    </tbody>
+  </table>
+</div>

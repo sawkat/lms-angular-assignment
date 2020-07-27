@@ -1,0 +1,25 @@
+<h2>Book List</h2>
+
+<div class="col-md-12 centeralign">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author Name</th>
+        <th scope="col">Noumber Of Pages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of book;let indexOfelement=index;">
+        <th scope="row">{{indexOfelement + 1}}</th>
+        <td>{{data.title}}</td>
+        <td>{{data.authorName}}</td>
+        <td>{{data.noOfPages}}</td> 
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
